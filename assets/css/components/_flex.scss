@@ -1,0 +1,9 @@
+@for $i from 1 through 5 {
+  .flex-#{$i} {
+    flex: #{$i}px;
+  }
+}
+
+.flex-0-0 {
+  flex: 0 0 auto;
+}

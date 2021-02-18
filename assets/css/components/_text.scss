@@ -1,0 +1,17 @@
+@for $i from 0 through 30 {
+  .fs-#{$i} {
+    font-size: #{$i}px;
+  }
+}
+
+.fwl {
+  font-weight: $font-weight-light !important;
+}
+
+.fwn {
+  font-weight: $font-weight-normal !important;
+}
+
+.fwb {
+  font-weight: $font-weight-bold !important;
+}
