@@ -1,0 +1,29 @@
+.custom-control {
+  padding-left: 18px;
+}
+
+.custom-control-label {
+  &::before,
+  &::after {
+    top: 2px;
+    left: -18px;
+    transform: scale(calc(14 / 16));
+  }
+}
+
+.custom-checkbox-light,
+.custom-radio-light {
+  .custom-control-label {
+    &::before {
+      border-color: $secondary !important;
+    }
+  }
+}
+
+.custom-checkbox .custom-control-label::before {
+  border-radius: 2px;
+}
+
+.slect-sm {
+  height: 20px;
+}

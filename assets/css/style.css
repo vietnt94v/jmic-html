@@ -8786,6 +8786,34 @@ img {
   color: #fff;
 }
 
+.btn-light {
+  color: #00529e;
+}
+
+.custom-control {
+  padding-left: 18px;
+}
+
+.custom-control-label::before, .custom-control-label::after {
+  top: 2px;
+  left: -18px;
+  -webkit-transform: scale(calc(14 / 16));
+          transform: scale(calc(14 / 16));
+}
+
+.custom-checkbox-light .custom-control-label::before,
+.custom-radio-light .custom-control-label::before {
+  border-color: #a3a3a3 !important;
+}
+
+.custom-checkbox .custom-control-label::before {
+  border-radius: 2px;
+}
+
+.slect-sm {
+  height: 20px;
+}
+
 .fs-0 {
   font-size: 0px;
 }
@@ -9066,8 +9094,16 @@ img {
 }
 
 .nav-sidebar-link-text {
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 700;
+}
+
+.nav-sidebar-filter-box {
+  border: 1px solid #fff;
+  margin: 0 8px;
+  padding: 20px 12px;
+  color: #fff;
+  font-size: 12px;
 }
 
 .footer-page {

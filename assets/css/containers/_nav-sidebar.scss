@@ -24,6 +24,14 @@
 }
 
 .nav-sidebar-link-text {
-  font-size: 17px;
+  font-size: 18px;
   font-weight: $fwb;
+}
+
+.nav-sidebar-filter-box {
+  border: 1px solid $light;
+  margin: 0 8px;
+  padding: 20px 12px;
+  color: $light;
+  font-size: 12px;
 }
