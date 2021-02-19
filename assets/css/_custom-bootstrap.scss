@@ -15,6 +15,15 @@ $container-max-widths: (
 
 $grid-gutter-width: 30px !default;
 
+// Font-size
 $font-weight-light: 300 !default;
 $font-weight-normal: 400 !default;
 $font-weight-bold: 700 !default;
+
+// Buttons
+$btn-padding-y-sm: 3px;
+$btn-padding-x-sm: 11px;
+$btn-font-size-sm: 11px;
+$btn-line-height-sm: 12px;
+
+$btn-focus-width: 0;
