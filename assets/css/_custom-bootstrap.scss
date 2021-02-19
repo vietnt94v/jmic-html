@@ -19,11 +19,59 @@ $grid-gutter-width: 30px !default;
 $font-weight-light: 300 !default;
 $font-weight-normal: 400 !default;
 $font-weight-bold: 700 !default;
+$fwl: $font-weight-light;
+$fwn: $font-weight-normal;
+$fwb: $font-weight-bold;
 
 // Buttons
 $btn-padding-y-sm: 3px;
 $btn-padding-x-sm: 11px;
-$btn-font-size-sm: 11px;
-$btn-line-height-sm: 12px;
-
+$btn-font-size-sm: 12px;
+$btn-line-height-sm: 1;
 $btn-focus-width: 0;
+
+// Tables
+$table-cell-padding-sm: 0.42rem !default;
+
+// Links
+$link-color: $primary-less;
+
+// Spacing
+$spacer: 15px !default;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    0: 0,
+    1: (
+      $spacer * 1/3
+    ),
+    2: (
+      $spacer * 2/3
+    ),
+    3: (
+      $spacer * 1
+    ),
+    4: (
+      $spacer * 4/3
+    ),
+    5: (
+      $spacer * 5/3
+    ),
+    6: (
+      $spacer * 2
+    ),
+    7: (
+      $spacer * 7/3
+    ),
+    8: (
+      $spacer * 8/3
+    ),
+    9: (
+      $spacer * 3
+    ),
+    10: (
+      $spacer * 10/3
+    )
+  ),
+  $spacers
+);

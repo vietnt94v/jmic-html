@@ -4,6 +4,8 @@ body {
 }
 
 a {
+  color: $primary-less;
+
   &:hover {
     text-decoration: none;
   }

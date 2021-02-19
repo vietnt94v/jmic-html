@@ -1,12 +1,14 @@
 .title-page {
-  font-size: 20px;
-  font-weight: $fwb;
   display: flex;
   align-items: flex-end;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: $fwb;
   color: $primary;
 }
 
 .title-section {
   font-size: 16px;
   font-weight: $fwb;
+  margin-bottom: 10px;
 }

@@ -1,0 +1,13 @@
+.btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
+.btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-secondary.dropdown-toggle:focus,
+.btn-outline-secondary:not(:disabled):not(.disabled):hover {
+  color: $light;
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled):active,
+.btn-outline-secondary:not(:disabled):not(.disabled).active,
+.show > .btn-outline-secondary.dropdown-toggle,
+.btn-outline-secondary:not(:disabled):not(.disabled):hover {
+  color: $light;
+}
