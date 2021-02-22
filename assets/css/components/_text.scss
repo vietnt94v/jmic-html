@@ -1,4 +1,4 @@
-@for $i from 0 through 30 {
+@for $i from 1 through 30 {
   .fs-#{$i} {
     font-size: #{$i}px;
   }
@@ -18,4 +18,8 @@
 
 .lh-1 {
   line-height: 1;
+}
+
+.bg-secondary-less {
+  background-color: $secondary-less !important;
 }

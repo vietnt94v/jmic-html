@@ -6,6 +6,12 @@
   padding-bottom: 45px;
 }
 
+body.no-footer {
+  .main-page {
+    min-height: calc(100vh - 50px);
+  }
+}
+
 .main-content {
   padding-left: 30px;
 }

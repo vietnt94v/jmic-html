@@ -1,3 +1,19 @@
+.btn {
+  height: 40px;
+}
+
+.btn-sm {
+  height: 20px;
+}
+
+.btn-light {
+  color: $primary;
+}
+
+.btn-secondary {
+  color: $light;
+}
+
 .btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
 .btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-secondary.dropdown-toggle:focus,
@@ -10,8 +26,4 @@
 .show > .btn-outline-secondary.dropdown-toggle,
 .btn-outline-secondary:not(:disabled):not(.disabled):hover {
   color: $light;
-}
-
-.btn-light {
-  color: $primary;
 }

@@ -23,6 +23,12 @@ $fwl: $font-weight-light;
 $fwn: $font-weight-normal;
 $fwb: $font-weight-bold;
 
+// Input, Button
+$input-btn-border-width: 0.5px !default;
+
+// Input
+$input-height: 40px;
+
 // Buttons
 $btn-padding-y-sm: 3px;
 $btn-padding-x-sm: 11px;
@@ -75,3 +81,7 @@ $spacers: map-merge(
   ),
   $spacers
 );
+
+// Modal
+$modal-content-border-radius: 1px !default;
+$modal-content-border-width: 0 !default;
