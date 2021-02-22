@@ -15,6 +15,12 @@ $container-max-widths: (
 
 $grid-gutter-width: 30px !default;
 
+// Border
+$border-color: rgba(
+  $color: $dark,
+  $alpha: 0.075
+) !default;
+
 // Font-size
 $font-weight-light: 300 !default;
 $font-weight-normal: 400 !default;
@@ -37,6 +43,7 @@ $btn-line-height-sm: 1;
 $btn-focus-width: 0;
 
 // Tables
+$table-cell-padding: 0.7rem !default;
 $table-cell-padding-sm: 0.42rem !default;
 
 // Links

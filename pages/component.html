@@ -181,34 +181,30 @@
             <h2 class="title-page">COMPONENT</h2>
             <div class="d-block">
               <h3>Modal</h3>
-
-              <!-- Button trigger modal -->
               <button
                 type="button"
                 class="btn btn-primary"
                 data-toggle="modal"
-                data-target="#exampleModalScrollable"
+                data-target="#modal-x"
               >
-                Launch demo modal
+                Modal centered scrollable modal-lg
               </button>
-
-              <!-- Modal -->
               <div
                 class="modal fade"
-                id="exampleModalScrollable"
+                id="modal-x"
                 tabindex="-1"
                 role="dialog"
-                aria-labelledby="exampleModalScrollableTitle"
                 aria-hidden="true"
               >
                 <div
-                  class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                  class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"
                   role="document"
                 >
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalScrollableTitle">
-                        Modal title
+                      <h5 class="modal-title text-primary">
+                        <span class="material-icons">account_box</span>
+                        <span class="pl-1">複数配信詳細</span>
                       </h5>
                       <button
                         type="button"
@@ -219,22 +215,222 @@
                         <span aria-hidden="true">&times;</span>
                       </button>
                     </div>
-                    <div class="modal-body">...</div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-dismiss="modal"
-                      >
-                        Close
+                    <div class="modal-body">
+                      <div class="table-responsive border">
+                        <table
+                          class="table table-borderless table-striped text-nowrap mb-0"
+                        >
+                          <tr>
+                            <td>企業名</td>
+                            <td>株式会社ABC</td>
+                          </tr>
+                          <tr>
+                            <td>氏名</td>
+                            <td>******</td>
+                          </tr>
+                          <tr>
+                            <td>ID</td>
+                            <td>123456</td>
+                          </tr>
+                          <tr>
+                            <td>配信人数</td>
+                            <td>1人</td>
+                          </tr>
+                          <tr>
+                            <td>配信時間</td>
+                            <td>2021年04月01日 13:00　配信予約</td>
+                          </tr>
+                          <tr>
+                            <td>配信者</td>
+                            <td>吉田絵理香</td>
+                          </tr>
+                          <tr>
+                            <td>タイトル</td>
+                            <td>食事チェックアドバイス</td>
+                          </tr>
+                          <tr>
+                            <td>メッセージ本文</td>
+                            <td>
+                              <div class="text-wrap">
+                                【食事時間について】
+                                ○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○
+                                ○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○
+                                <div class="d-block pt-4">A12:00-13:00</div>
+                                <div class="d-block">B18:00-19:00</div>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <div class="pt-10"></div>
+                      <div class="pt-4"></div>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                      <button type="button" class="btn btn-outline-primary">
+                        下書き削除
                       </button>
-                      <button type="button" class="btn btn-primary">
-                        Save changes
+                      <button type="button" class="btn btn-outline-primary">
+                        内容を変更する
                       </button>
                     </div>
                   </div>
                 </div>
               </div>
+              <hr />
+              <h3>Modal confim delete in modal</h3>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#modal-x2"
+              >
+                Modal centered scrollable modal-lg
+              </button>
+              <div
+                class="modal fade"
+                id="modal-x2"
+                tabindex="-1"
+                role="dialog"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"
+                  role="document"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title text-primary">
+                        <span class="material-icons">settings</span>
+                        <span class="pl-1">全体管理者</span>
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="table-responsive border">
+                        <table
+                          class="table table-borderless table-striped text-nowrap mb-0"
+                        >
+                          <tr>
+                            <td class="w--100">管理者１</td>
+                            <td class="flex-1">八木琴美/富山大学</td>
+                            <td class="w--50">
+                              <button
+                                type="button"
+                                class="close fs-20 m-n--3"
+                                data-toggle="modal"
+                                data-target="#modal-confirm-delete-id-1"
+                              >
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="w--100">管理者１</td>
+                            <td class="flex-1">八木琴美/富山大学</td>
+                            <td class="w--50">
+                              <button
+                                type="button"
+                                class="close fs-20 m-n--3"
+                                data-toggle="modal"
+                                data-target="#modal-confirm-delete-id-2"
+                              >
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="w--100">管理者１</td>
+                            <td class="flex-1">八木琴美/富山大学</td>
+                            <td class="w--50">
+                              <button
+                                type="button"
+                                class="close fs-20 m-n--3"
+                                data-toggle="modal"
+                                data-target="#modal-confirm-delete-id-3"
+                              >
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="modal-footer justify-content-start">
+                      <a
+                        href="#"
+                        class="text-primary fs-16"
+                        data-dismiss="modal"
+                      >
+                        キャンセル
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal confirm -->
+              <div
+                class="modal modal-confirm fade"
+                id="modal-confirm-delete-id-1"
+                tabindex="-1"
+                role="dialog"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="close text-secondary p-2"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span
+                          aria-hidden="true"
+                          class="d-block text-secondary-more fs-18"
+                          >&times;</span
+                        >
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="d-flex justify-content-center">
+                        <span class="material-icons text-danger fs-20 mr-1 pt-1"
+                          >error</span
+                        >
+                        <div class="text-center text-danger fwb fs-18">
+                          削除すると元に戻せません<br />
+                          削除してよろしいですか？
+                        </div>
+                      </div>
+                      <div class="pt-8"></div>
+                    </div>
+                    <div
+                      class="modal-footer justify-content-between align-items-end"
+                    >
+                      <a
+                        href="#"
+                        class="text-primary fs-16"
+                        data-dismiss="modal"
+                      >
+                        キャンセル
+                      </a>
+                      <button
+                        type="button"
+                        class="btn btn-outline-primary px-10"
+                      >
+                        削除する
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr />
             </div>
           </div>
           <!-- Main Content -->

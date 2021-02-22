@@ -1,3 +1,17 @@
+@for $i from 1 through 20 {
+  .m-n--#{$i} {
+    margin: -#{$i}px !important;
+  }
+}
+
+.w--50 {
+  width: 50px;
+}
+
+.w--100 {
+  width: 100px;
+}
+
 .mw-255 {
   max-width: 255px;
 }

@@ -20,6 +20,14 @@
   line-height: 1;
 }
 
+.text-secondary-more {
+  color: $secondary-more !important;
+}
+
 .bg-secondary-less {
   background-color: $secondary-less !important;
+}
+
+.ws-pre {
+  white-space: pre;
 }
