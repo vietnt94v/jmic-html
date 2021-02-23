@@ -1,0 +1,17 @@
+.scroll-sm {
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $scroll-track;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $scroll-bg;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: rgba($color: $scroll-bg, $alpha: 0.75);
+  }
+}
