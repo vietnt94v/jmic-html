@@ -1,0 +1,32 @@
+.search-dashboard {
+  position: relative;
+  top: -7px;
+  margin-top: -32px;
+
+  .search-dashboard-input {
+    width: 285px;
+    height: 32px;
+    border-radius: 3px;
+    font-size: 12px;
+    border: none;
+    border: 1px solid $dark;
+    padding-left: 10px;
+    padding-right: 38px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      opacity: 0.6;
+    }
+  }
+
+  .icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+  }
+}

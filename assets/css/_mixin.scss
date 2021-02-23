@@ -1,3 +1,8 @@
+// Circle
+@mixin circle-variant($background) {
+  @include gradient-bg($background);
+}
+
 @mixin trans() {
   transition: all 0.3s ease;
 }

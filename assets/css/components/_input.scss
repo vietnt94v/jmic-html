@@ -1,12 +1,13 @@
 .custom-control {
-  padding-left: 18px;
+  padding-left: 20px;
+  min-height: 16px;
 }
 
 .custom-control-label {
   &::before,
   &::after {
     top: 2px;
-    left: -18px;
+    left: -20px;
     transform: scale(calc(14 / 16));
   }
 }

@@ -29,13 +29,13 @@
           <aside class="nav-sidebar">
             <ul class="list-unstyled mb-0 pt-3 pb-7">
               <li>
-                <a href="#" class="nav-sidebar-link">
+                <a href="/pages/index.html" class="nav-sidebar-link">
                   <span class="material-icons nav-sidebar-link-icon">home</span>
                   <span class="nav-sidebar-link-text">HOME</span>
                 </a>
               </li>
               <li>
-                <a href="#" class="nav-sidebar-link">
+                <a href="/pages/user-list.html" class="nav-sidebar-link">
                   <span class="material-icons nav-sidebar-link-icon"
                     >account_box</span
                   >
@@ -43,7 +43,7 @@
                 </a>
               </li>
               <li>
-                <a href="#" class="nav-sidebar-link">
+                <a href="/pages/chart.html" class="nav-sidebar-link">
                   <span class="material-icons nav-sidebar-link-icon"
                     >bar_chart</span
                   >
@@ -51,7 +51,7 @@
                 </a>
               </li>
               <li>
-                <a href="#" class="nav-sidebar-link">
+                <a href="/pages/delivery-box.html" class="nav-sidebar-link">
                   <span class="material-icons nav-sidebar-link-icon"
                     >chat_bubble_outline</span
                   >
@@ -59,7 +59,7 @@
                 </a>
               </li>
               <li>
-                <a href="#" class="nav-sidebar-link">
+                <a href="/pages/setting.html" class="nav-sidebar-link">
                   <span class="material-icons nav-sidebar-link-icon"
                     >settings</span
                   >
@@ -69,7 +69,7 @@
             </ul>
             <div class="nav-sidebar-filter-box mb-4">
               <span>90日以内の食行動質問票 アンケート回答</span>
-              <div class="d-block">
+              <div class="d-block mb-2">
                 <div
                   class="custom-control custom-radio custom-radio-light custom-control-inline mr-2"
                 >
@@ -97,7 +97,7 @@
                   >
                 </div>
               </div>
-              <div class="d-bock">
+              <div class="d-block mb-2">
                 <div
                   class="custom-control custom-checkbox custom-checkbox-light"
                 >
@@ -107,11 +107,11 @@
                     id="toyamaAnswer"
                   />
                   <label class="custom-control-label" for="toyamaAnswer"
-                    >富山パラドックス回答</label
+                    >富山パラドックス<br />回答済み</label
                   >
                 </div>
               </div>
-              <div class="d-block">
+              <div class="d-block mb-2">
                 <div
                   class="custom-control custom-radio custom-radio-light custom-control-inline mr-2"
                 >
@@ -135,9 +135,11 @@
                   <label class="custom-control-label" for="female">女性</label>
                 </div>
               </div>
-              <div class="d-block">
-                <div class="d-flex mb-2">
-                  <label for="bmiSelect" class="text-nowrap mr-2">BMI</label>
+              <div class="d-block mb-3">
+                <div class="d-flex">
+                  <label for="bmiSelect" class="text-nowrap mb-0 mr-2"
+                    >BMI</label
+                  >
                   <select id="bmiSelect" class="slect-sm w-100">
                     <option value="">BMI 1</option>
                     <option value="">BMI 2</option>
@@ -145,9 +147,9 @@
                   </select>
                 </div>
               </div>
-              <div class="d-block">
-                <div class="d-flex mb-2">
-                  <label for="groupSelect" class="text-nowrap mr-2"
+              <div class="d-block mb-3">
+                <div class="d-flex">
+                  <label for="groupSelect" class="text-nowrap mb-0 mr-2"
                     >グループ</label
                   >
                   <select id="groupSelect" class="slect-sm w-100">
@@ -266,17 +268,25 @@
                       <div class="pt-4"></div>
                     </div>
                     <div class="modal-footer justify-content-between">
-                      <button type="button" class="btn btn-outline-primary px-10">
+                      <button
+                        type="button"
+                        class="btn btn-outline-primary px-10"
+                      >
                         下書き削除
                       </button>
-                      <button type="button" class="btn btn-outline-primary px-10">
+                      <button
+                        type="button"
+                        class="btn btn-outline-primary px-10"
+                      >
                         内容を変更する
                       </button>
                     </div>
                   </div>
                 </div>
               </div>
-              <hr />
+            </div>
+            <hr />
+            <div class="d-block">
               <h3>Modal confim delete in modal</h3>
               <button
                 type="button"
@@ -319,7 +329,13 @@
                         >
                           <tr>
                             <td class="w--100">管理者１</td>
-                            <td class="flex-1">八木琴美/富山大学</td>
+                            <td class="flex-1">
+                              八木琴美/富山大学
+                              <code
+                                >(button 'x' turn on modal confirm in 1st row
+                                only) >>></code
+                              >
+                            </td>
                             <td class="w--50">
                               <button
                                 type="button"
@@ -347,17 +363,17 @@
                           </tr>
                           <tr>
                             <td class="w--100">管理者１</td>
-                            <td class="flex-1"></td>
-                            <td class="w--50">
-                              <button
-                                type="button"
-                                class="close fs-20 m-n--3"
-                                data-toggle="modal"
-                                data-target="#modal-confirm-delete-id-3"
+                            <td class="flex-1">
+                              <div
+                                class="d-flex align-items-center text-primary-less"
                               >
-                                <span aria-hidden="true">&times;</span>
-                              </button>
+                                <span class="material-icons fs-19 mr-1"
+                                  >error</span
+                                >
+                                管理者2　田中五郎　を管理者から外しました。
+                              </div>
                             </td>
+                            <td class="w--50"></td>
                           </tr>
                           <tr>
                             <td class="w--100">管理者１</td>

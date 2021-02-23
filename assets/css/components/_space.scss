@@ -4,6 +4,28 @@
   }
 }
 
+@for $i from 1 through 4 {
+  .mt--#{$i},
+  .my--#{$i} {
+    margin-top: #{$i}px;
+  }
+
+  .mb--#{$i},
+  .my--#{$i} {
+    margin-bottom: #{$i}px;
+  }
+
+  .pt--#{$i},
+  .py--#{$i} {
+    padding-top: #{$i}px;
+  }
+
+  .pb--#{$i},
+  .py--#{$i} {
+    padding-bottom: #{$i}px;
+  }
+}
+
 .w--50 {
   width: 50px;
 }

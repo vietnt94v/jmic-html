@@ -1,0 +1,13 @@
+@for $i from 1 through 30 {
+  .circle-#{$i} {
+    width: #{$i}px;
+    height: #{$i}px;
+    border-radius: 50%;
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .circle-#{$color} {
+    @include circle-variant($value);
+  }
+}
