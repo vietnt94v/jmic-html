@@ -1,6 +1,12 @@
 @for $i from 1 through 30 {
   .fs-#{$i} {
-    font-size: #{$i}px;
+    font-size: #{$i}px !important;
+  }
+}
+
+@for $i from 1 through 30 {
+  .lp-#{$i} {
+    letter-spacing: #{$i}px !important;
   }
 }
 
@@ -17,7 +23,7 @@
 }
 
 .lh-1 {
-  line-height: 1;
+  line-height: 1 !important;
 }
 
 .text-primary-less {
@@ -33,5 +39,9 @@
 }
 
 .ws-pre {
-  white-space: pre;
+  white-space: pre !important;
+}
+
+.text-align-last-justify {
+  text-align-last: justify;
 }
