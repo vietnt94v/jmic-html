@@ -67,111 +67,6 @@
                 </a>
               </li>
             </ul>
-            <div class="nav-sidebar-filter-box mb-4">
-              <span>90日以内の食行動質問票 アンケート回答</span>
-              <div class="d-block mb-2">
-                <div
-                  class="custom-control custom-radio custom-radio-light custom-control-inline mr-2"
-                >
-                  <input
-                    type="radio"
-                    id="confirmYes"
-                    name="confirmYesNo"
-                    class="custom-control-input"
-                  />
-                  <label class="custom-control-label" for="confirmYes"
-                    >あり</label
-                  >
-                </div>
-                <div
-                  class="custom-control custom-radio custom-radio-light custom-control-inline mr-0"
-                >
-                  <input
-                    type="radio"
-                    id="confirmNo"
-                    name="confirmYesNo"
-                    class="custom-control-input"
-                  />
-                  <label class="custom-control-label" for="confirmNo"
-                    >なし</label
-                  >
-                </div>
-              </div>
-              <div class="d-block mb-2">
-                <div
-                  class="custom-control custom-checkbox custom-checkbox-light"
-                >
-                  <input
-                    type="checkbox"
-                    class="custom-control-input"
-                    id="toyamaAnswer"
-                  />
-                  <label class="custom-control-label" for="toyamaAnswer"
-                    >富山パラドックス<br />回答済み</label
-                  >
-                </div>
-              </div>
-              <div class="d-block mb-2">
-                <div
-                  class="custom-control custom-radio custom-radio-light custom-control-inline mr-2"
-                >
-                  <input
-                    type="radio"
-                    id="male"
-                    name="gender"
-                    class="custom-control-input"
-                  />
-                  <label class="custom-control-label" for="male">男性</label>
-                </div>
-                <div
-                  class="custom-control custom-radio custom-radio-light custom-control-inline mr-0"
-                >
-                  <input
-                    type="radio"
-                    id="female"
-                    name="gender"
-                    class="custom-control-input"
-                  />
-                  <label class="custom-control-label" for="female">女性</label>
-                </div>
-              </div>
-              <div class="d-block mb-3">
-                <div class="d-flex">
-                  <label for="bmiSelect" class="text-nowrap mb-0 mr-2"
-                    >BMI</label
-                  >
-                  <select id="bmiSelect" class="slect-sm w-100">
-                    <option value="">BMI 1</option>
-                    <option value="">BMI 2</option>
-                    <option value="">BMI 3</option>
-                  </select>
-                </div>
-              </div>
-              <div class="d-block mb-3">
-                <div class="d-flex">
-                  <label for="groupSelect" class="text-nowrap mb-0 mr-2"
-                    >グループ</label
-                  >
-                  <select id="groupSelect" class="slect-sm w-100">
-                    <option value="">グループ 1</option>
-                    <option value="">グループ 2</option>
-                    <option value="">グループ 3</option>
-                  </select>
-                </div>
-              </div>
-              <div class="d-block">
-                <div class="d-flex jsutify-content-between">
-                  <button class="btn btn-sm btn-outline-light text-nowrap mr-2">
-                    アルア
-                  </button>
-                  <button
-                    class="btn btn-sm btn-light text-nowrap rounded-pill flex-1"
-                  >
-                    アルア
-                  </button>
-                </div>
-              </div>
-            </div>
             <div class="px-2">
               <button class="btn btn-sm btn-light btn-block">ログアウト</button>
             </div>
@@ -184,6 +79,108 @@
               <span class="material-icons">chat_bubble_outline</span>
               <span class="pl-1">配信BOX</span>
             </h2>
+            <section class="section-block">
+              <div class="text-primary fs-16 fwb mb-2">未送信</div>
+              <table
+                class="table table-borderless table-striped text-center border"
+              >
+                <thead>
+                  <tr>
+                    <th>配信予約日時</th>
+                    <th>配信者</th>
+                    <th class="text-left px-5">企業名</th>
+                    <th>配信先ID</th>
+                    <th>配信人数</th>
+                    <th>配信種別</th>
+                  </tr>
+                </thead>
+                <tbody class="cursor-pointer">
+                  <tr id="order-1">
+                    <td>2020/04/01 13:00</td>
+                    <td>吉田絵理香</td>
+                    <td class="text-left">株式会社ABC</td>
+                    <td>123456</td>
+                    <td>1</td>
+                    <td>配信待ち</td>
+                  </tr>
+                  <tr id="order-2">
+                    <td>2020/04/01 13:00</td>
+                    <td>吉田絵理香</td>
+                    <td class="text-left">株式会社アイシン</td>
+                    <td>123456</td>
+                    <td>1</td>
+                    <td>配信待ち</td>
+                  </tr>
+                  <tr id="order-3">
+                    <td>2020/04/01 13:00</td>
+                    <td>吉田絵理香</td>
+                    <td class="text-left">株式会社デザインボックス</td>
+                    <td>123456</td>
+                    <td>1</td>
+                    <td>配信待ち</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+            <section class="section-block">
+              <div class="text-primary fs-16 fwb mb-2">最近の履歴</div>
+              <table
+                class="table table-borderless table-striped text-center border"
+              >
+                <thead>
+                  <tr>
+                    <th>配信予約日時</th>
+                    <th>配信者</th>
+                    <th class="text-left px-5">企業名</th>
+                    <th>配信先ID</th>
+                    <th>配信人数</th>
+                    <th>配信種別</th>
+                  </tr>
+                </thead>
+                <tbody class="cursor-pointer">
+                  <tr id="order-history-1">
+                    <td>2020/04/01 13:00</td>
+                    <td>吉田絵理香</td>
+                    <td class="text-left">株式会社ABC</td>
+                    <td>123456</td>
+                    <td>1</td>
+                    <td>配信待ち</td>
+                  </tr>
+                  <tr id="">
+                    <td>2020/04/01 13:00</td>
+                    <td>吉田絵理香</td>
+                    <td class="text-left">株式会社アイシン</td>
+                    <td>123456</td>
+                    <td>1</td>
+                    <td>配信待ち</td>
+                  </tr>
+                  <tr id="">
+                    <td>2020/04/01 13:00</td>
+                    <td>吉田絵理香</td>
+                    <td class="text-left">株式会社デザインボックス</td>
+                    <td>123456</td>
+                    <td>1</td>
+                    <td>配信待ち</td>
+                  </tr>
+                  <tr id="">
+                    <td>2020/04/01 13:00</td>
+                    <td>吉田絵理香</td>
+                    <td class="text-left">株式会社デザインボックス</td>
+                    <td>123456</td>
+                    <td>1</td>
+                    <td>配信待ち</td>
+                  </tr>
+                  <tr id="">
+                    <td>2020/04/01 13:00</td>
+                    <td>吉田絵理香</td>
+                    <td class="text-left">株式会社デザインボックス</td>
+                    <td>123456</td>
+                    <td>1</td>
+                    <td>配信待ち</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
           </div>
           <!-- Main Content -->
         </div>
@@ -195,8 +192,105 @@
     <footer class="footer-page"></footer>
     <!-- End Footer -->
 
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+      id="modal-order"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"
+        role="document"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-primary">
+              <span class="material-icons">account_box</span>
+              <span class="pl-1">複数配信詳細</span>
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="table-responsive border">
+              <table
+                class="table table-borderless table-striped text-nowrap mb-0"
+              >
+                <tr>
+                  <td>企業名</td>
+                  <td>株式会社ABC</td>
+                </tr>
+                <tr>
+                  <td>氏名</td>
+                  <td>******</td>
+                </tr>
+                <tr>
+                  <td>ID</td>
+                  <td>123456</td>
+                </tr>
+                <tr>
+                  <td>配信人数</td>
+                  <td>1人</td>
+                </tr>
+                <tr>
+                  <td>配信時間</td>
+                  <td>2021年04月01日 13:00　配信予約</td>
+                </tr>
+                <tr>
+                  <td>配信者</td>
+                  <td>吉田絵理香</td>
+                </tr>
+                <tr>
+                  <td>タイトル</td>
+                  <td>食事チェックアドバイス</td>
+                </tr>
+                <tr>
+                  <td>メッセージ本文</td>
+                  <td>
+                    <div class="text-wrap">
+                      【食事時間について】
+                      ○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○
+                      ○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○
+                      <div class="d-block pt-4">A12:00-13:00</div>
+                      <div class="d-block">B18:00-19:00</div>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="pt-10"></div>
+            <div class="pt-4"></div>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-outline-primary px-10">
+              下書き削除
+            </button>
+            <button type="button" class="btn btn-outline-primary px-10">
+              内容を変更する
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal -->
+
     <script src="/assets/js/jquery-3.5.1.min.js"></script>
     <script src="/assets/js/bootstrap.min.js"></script>
     <script src="/assets/js/index.js"></script>
+    <script>
+      jQuery(function () {
+        $('#order-1, #order-history-1').on('click', function () {
+          $('#modal-order').modal('show')
+        })
+      })
+    </script>
   </body>
 </html>
