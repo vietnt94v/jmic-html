@@ -15,6 +15,16 @@
     margin-bottom: #{$i}px;
   }
 
+  .ml--#{$i},
+  .mx--#{$i} {
+    margin-left: #{$i}px;
+  }
+
+  .mr--#{$i},
+  .mx--#{$i} {
+    margin-right: #{$i}px;
+  }
+
   .pt--#{$i},
   .py--#{$i} {
     padding-top: #{$i}px;
@@ -24,20 +34,42 @@
   .py--#{$i} {
     padding-bottom: #{$i}px;
   }
+
+  .pl--#{$i},
+  .px--#{$i} {
+    padding-left: #{$i}px;
+  }
+
+  .pr--#{$i},
+  .px--#{$i} {
+    padding-right: #{$i}px;
+  }
 }
 
 .w--50 {
-  width: 50px;
+  width: 50px !important;
+}
+
+.w--70 {
+  width: 70px !important;
 }
 
 .w--100 {
-  width: 100px;
+  width: 100px !important;
+}
+
+.w--175 {
+  width: 175px !important;
 }
 
 .mw-255 {
-  max-width: 255px;
+  max-width: 255px !important;
 }
 
 .mw-340 {
-  max-width: 340px;
+  max-width: 340px !important;
+}
+
+.h--26 {
+  height: 26px !important;
 }

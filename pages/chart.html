@@ -67,111 +67,6 @@
                 </a>
               </li>
             </ul>
-            <div class="nav-sidebar-filter-box mb-4">
-              <span>90日以内の食行動質問票 アンケート回答</span>
-              <div class="d-block mb-2">
-                <div
-                  class="custom-control custom-radio custom-radio-light custom-control-inline mr-2"
-                >
-                  <input
-                    type="radio"
-                    id="confirmYes"
-                    name="confirmYesNo"
-                    class="custom-control-input"
-                  />
-                  <label class="custom-control-label" for="confirmYes"
-                    >あり</label
-                  >
-                </div>
-                <div
-                  class="custom-control custom-radio custom-radio-light custom-control-inline mr-0"
-                >
-                  <input
-                    type="radio"
-                    id="confirmNo"
-                    name="confirmYesNo"
-                    class="custom-control-input"
-                  />
-                  <label class="custom-control-label" for="confirmNo"
-                    >なし</label
-                  >
-                </div>
-              </div>
-              <div class="d-block mb-2">
-                <div
-                  class="custom-control custom-checkbox custom-checkbox-light"
-                >
-                  <input
-                    type="checkbox"
-                    class="custom-control-input"
-                    id="toyamaAnswer"
-                  />
-                  <label class="custom-control-label" for="toyamaAnswer"
-                    >富山パラドックス<br />回答済み</label
-                  >
-                </div>
-              </div>
-              <div class="d-block mb-2">
-                <div
-                  class="custom-control custom-radio custom-radio-light custom-control-inline mr-2"
-                >
-                  <input
-                    type="radio"
-                    id="male"
-                    name="gender"
-                    class="custom-control-input"
-                  />
-                  <label class="custom-control-label" for="male">男性</label>
-                </div>
-                <div
-                  class="custom-control custom-radio custom-radio-light custom-control-inline mr-0"
-                >
-                  <input
-                    type="radio"
-                    id="female"
-                    name="gender"
-                    class="custom-control-input"
-                  />
-                  <label class="custom-control-label" for="female">女性</label>
-                </div>
-              </div>
-              <div class="d-block mb-3">
-                <div class="d-flex">
-                  <label for="bmiSelect" class="text-nowrap mb-0 mr-2"
-                    >BMI</label
-                  >
-                  <select id="bmiSelect" class="slect-sm w-100">
-                    <option value="">BMI 1</option>
-                    <option value="">BMI 2</option>
-                    <option value="">BMI 3</option>
-                  </select>
-                </div>
-              </div>
-              <div class="d-block mb-3">
-                <div class="d-flex">
-                  <label for="groupSelect" class="text-nowrap mb-0 mr-2"
-                    >グループ</label
-                  >
-                  <select id="groupSelect" class="slect-sm w-100">
-                    <option value="">グループ 1</option>
-                    <option value="">グループ 2</option>
-                    <option value="">グループ 3</option>
-                  </select>
-                </div>
-              </div>
-              <div class="d-block">
-                <div class="d-flex jsutify-content-between">
-                  <button class="btn btn-sm btn-outline-light text-nowrap mr-2">
-                    アルア
-                  </button>
-                  <button
-                    class="btn btn-sm btn-light text-nowrap rounded-pill flex-1"
-                  >
-                    アルア
-                  </button>
-                </div>
-              </div>
-            </div>
             <div class="px-2">
               <button class="btn btn-sm btn-light btn-block">ログアウト</button>
             </div>
@@ -184,7 +79,123 @@
               <span class="material-icons">bar_chart</span>
               <span class="pl-1">グラフ</span>
             </h2>
-            
+            <div class="d-flex text-primary fs-16 fwb mb-1">
+              <span class="material-icons">search</span>
+              <span>食行動質問表 検索</span>
+            </div>
+            <div class="bg-secondary-less py-6">
+              <form action="" class="mx-auto">
+                <div class="d-flex justify-content-center">
+                  <div class="d-block mr-6">
+                    <div class="d-block mb-3">
+                      <div
+                        class="custom-control custom-checkbox custom-checkbox-light"
+                      >
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          id="toyamaAnswer"
+                        />
+                        <label class="custom-control-label" for="toyamaAnswer"
+                          >90日以内の食行動アンケート回答のみ</label
+                        >
+                      </div>
+                    </div>
+                    <div class="d-block">
+                      <div
+                        class="custom-control custom-radio custom-radio-light custom-control-inline mr-2"
+                      >
+                        <input
+                          type="radio"
+                          id="male"
+                          name="gender"
+                          class="custom-control-input"
+                        />
+                        <label class="custom-control-label" for="male"
+                          >男性</label
+                        >
+                      </div>
+                      <div
+                        class="custom-control custom-radio custom-radio-light custom-control-inline mr-0"
+                      >
+                        <input
+                          type="radio"
+                          id="female"
+                          name="gender"
+                          class="custom-control-input"
+                        />
+                        <label class="custom-control-label" for="female"
+                          >女性</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-block">
+                    <div class="d-block mb-3">
+                      <div class="d-flex">
+                        <label
+                          for="bmiSelect"
+                          class="w--70 flex-0-0 text-nowrap mb-0 mr-2"
+                          >BMI</label
+                        >
+                        <select
+                          id="bmiSelect"
+                          class="custom-select custom-select-sm w-100"
+                        >
+                          <option value="">18.5以上</option>
+                          <option value="">19.5以上</option>
+                          <option value="">20.5以上</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="d-block mb-3">
+                      <div class="d-flex">
+                        <label
+                          for="companySelect"
+                          class="w--70 flex-0-0 text-nowrap mb-0 mr-2"
+                          >企業名</label
+                        >
+                        <select
+                          id="companySelect"
+                          class="custom-select custom-select-sm w-100"
+                        >
+                          <option value="">企業名 1</option>
+                          <option value="">企業名 2</option>
+                          <option value="">企業名 3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="d-block mb-3">
+                      <div class="d-flex">
+                        <label
+                          for="companySelect"
+                          class="w--70 flex-0-0 text-nowrap mb-0 mr-2"
+                          >カテゴリー</label
+                        >
+                        <select
+                          id="companySelect"
+                          class="custom-select custom-select-sm w-100"
+                        >
+                          <option value="">Aグループ 1</option>
+                          <option value="">Aグループ 2</option>
+                          <option value="">Aグループ 3</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center pt-2">
+                  <button
+                    class="btn btn-sm btn-outline-primary h--26 rounded-0 mr-2"
+                  >
+                    フラフ
+                  </button>
+                  <button class="btn btn-sm btn-primary h--26 rounded-0 w--175">
+                    検索
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
           <!-- Main Content -->
         </div>

@@ -7,8 +7,8 @@
 @import 'mixin';
 @import 'common';
 
-@import 'components/space';
 @import 'components/scollbar';
+@import 'components/grid';
 @import 'components/button';
 @import 'components/input';
 @import 'components/text';
@@ -21,6 +21,7 @@
 @import 'components/modal';
 @import 'components/search-dashboard';
 @import 'components/shape';
+@import 'components/space';
 
 @import 'containers/header';
 @import 'containers/main-page';
