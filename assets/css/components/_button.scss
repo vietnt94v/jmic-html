@@ -39,8 +39,10 @@
 }
 
 .btn-h-26 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   height: 26px;
+  line-height: 26px;
   font-size: 14px;
-  padding-top: 4px;
-  padding-bottom: 4px;
 }

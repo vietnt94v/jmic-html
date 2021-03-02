@@ -46,6 +46,16 @@
   }
 }
 
+@for $i from 1 through 20 {
+  .rounded--#{$i} {
+    border-radius: #{$i}px !important;
+  }
+}
+
+.w--20 {
+  width: 20px !important;
+}
+
 .w--50 {
   width: 50px !important;
 }
@@ -72,4 +82,19 @@
 
 .w--350 {
   width: 340px !important;
+}
+
+.h--100 {
+  height: 100px !important;
+}
+
+.wh--100 {
+  width: 100px !important;
+  height: 100px !important;
+}
+
+.lnl-m4 {
+  .item:not(:last-child) {
+    margin-right: 20px;
+  }
 }
