@@ -36,3 +36,16 @@
   font-size: 14px;
   border-radius: 1px;
 }
+
+.input-setup-title {
+  padding-right: 70px;
+  font-size: 14px;
+}
+
+.input-setup-title-note {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  font-size: 8px;
+  color: $secondary;
+}

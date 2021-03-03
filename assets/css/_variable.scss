@@ -5,6 +5,11 @@ $secondary-more: #707070;
 $secondary-less: #f5f5f5;
 $dark: #000;
 $light: #fff;
+$info: #b0d2fa;
+$info-o3: rgba(
+  $color: $info,
+  $alpha: 0.3
+);
 
 $footer-bg: #f7f5f5;
 $scroll-bg: #a2a2a2;

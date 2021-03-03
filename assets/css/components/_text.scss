@@ -34,10 +34,6 @@
   color: $secondary-more !important;
 }
 
-.bg-secondary-less {
-  background-color: $secondary-less !important;
-}
-
 .ws-pre {
   white-space: pre !important;
 }
@@ -48,4 +44,12 @@
 
 .ff-ss {
   font-family: sans-serif;
+}
+
+.bg-secondary-less {
+  background-color: $secondary-less !important;
+}
+
+.bg-info-o3 {
+  background-color: $info-o3;
 }
