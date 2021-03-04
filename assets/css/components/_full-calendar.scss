@@ -1,0 +1,137 @@
+.fc-prev-button,
+.fc-next-button {
+  position: relative;
+  background: none !important;
+  border: none !important;
+  color: $secondary !important;
+  font-size: 15px;
+
+  &:hover,
+  &:focus {
+    background: none !important;
+    color: $secondary !important;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.fc-prev-button {
+  padding-left: 20px;
+
+  &::after {
+    background-image: url('/assets/images/icon-left-arrow.svg');
+    left: 0;
+  }
+}
+
+.fc-next-button {
+  padding-right: 20px;
+
+  &::after {
+    background-image: url('/assets/images/icon-right-arrow.svg');
+    right: 0;
+  }
+}
+
+.fc-toolbar-title {
+  color: $dark;
+  font-size: 30px !important;
+  letter-spacing: 4px;
+  margin-top: -30px !important;
+}
+
+.calendar-grid {
+  padding-top: 20px;
+  font-size: 25px;
+  color: $secondary;
+
+  th,
+  td {
+    font-weight: $fwl !important;
+    border-style: none !important;
+  }
+
+  .fc-scrollgrid {
+    border-style: none !important;
+  }
+
+  .fc-header-toolbar {
+    margin-bottom: 0 !important;
+  }
+
+  .fc-col-header-cell {
+    font-weight: $fwl;
+  }
+
+  .fc-daygrid-day-top {
+    justify-content: center;
+  }
+
+  .fc-daygrid-day-events {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .fc-daygrid-day-events {
+    min-height: 12px !important;
+  }
+
+  .fc-daygrid-event {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    margin: 0 4px !important;
+  }
+
+  .fc-col-header {
+    .fc-day-sat,
+    .fc-day-sun {
+      color: $danger;
+    }
+  }
+
+  .fc-col-header-cell-cushion {
+    min-height: 85px;
+    @include dfc();
+  }
+
+  .fc-day-today {
+    background-color: transparent !important;
+  }
+}
+
+.fc-daygrid-event {
+  &[data-dot-color='primary'] {
+    background-color: $primary;
+  }
+
+  &[data-dot-color='info-more'] {
+    background-color: $info-more;
+  }
+
+  &[data-dot-color='warning'] {
+    background-color: $warning;
+  }
+
+  &[data-dot-color='danger'] {
+    background-color: $danger;
+  }
+
+  &[data-dot-color='secondary'] {
+    background-color: $secondary;
+  }
+
+  &[data-dot-color='success'] {
+    background-color: $success;
+  }
+}

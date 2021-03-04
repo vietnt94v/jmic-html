@@ -189,8 +189,7 @@
               <span class="pl-1">Calendar</span>
             </h2>
             <div class="d-block">
-              x
-              <div id="calendar"></div>
+              <div id="calendar" class="calendar-grid"></div>
             </div>
           </div>
           <!-- Main Content -->
@@ -205,7 +204,6 @@
 
     <script src="/assets/js/jquery-3.5.1.min.js"></script>
     <script src="/assets/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.5.1/locales-all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.5.1/main.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.5.1/locales-all.js"></script>
     <script src="/assets/js/index.js"></script>
@@ -214,7 +212,94 @@
       document.addEventListener('DOMContentLoaded', function () {
         var calendarEl = document.getElementById('calendar')
         var calendar = new FullCalendar.Calendar(calendarEl, {
-          initialView: 'dayGridMonth'
+          themeSystem: 'bootstrap',
+          height: 'auto',
+          buttonText: {
+            prev: '前月',
+            next: '翌月'
+          },
+          initialView: 'dayGridMonth',
+          locale: 'ja',
+          headerToolbar: {
+            left: 'prev',
+            center: 'title',
+            right: 'next'
+          },
+          firstDay: 1,
+          dayCellContent: function (e) {
+            e.dayNumberText = e.dayNumberText.replace('日', '')
+          },
+          events: [
+            {
+              id: 1,
+              start: '2021-03-05',
+              extendedProps: {
+                type: 1
+              }
+            },
+            {
+              id: 2,
+              start: '2021-03-05',
+              extendedProps: {
+                type: 2
+              }
+            },
+            {
+              id: 3,
+              start: '2021-03-05',
+              extendedProps: {
+                type: 3
+              }
+            },
+            {
+              id: 4,
+              start: '2021-03-05',
+              extendedProps: {
+                type: 5
+              }
+            },
+            {
+              id: 5,
+              start: '2021-03-10',
+              extendedProps: {
+                type: 4
+              }
+            },
+            {
+              id: 567,
+              start: '2021-03-10',
+              extendedProps: {
+                type: 5
+              }
+            },
+            {
+              id: 52,
+              start: '2021-03-10',
+              extendedProps: {
+                type: 2
+              }
+            }
+          ],
+          eventBorderColor: 'transparent',
+          eventDidMount: function (info) {
+            switch (info.event.extendedProps.type) {
+              case 1:
+                info.el.dataset.dotColor = 'primary'
+                break
+              case 2:
+                info.el.dataset.dotColor = 'info-more'
+                break
+              case 3:
+                info.el.dataset.dotColor = 'warning'
+                break
+              case 4:
+                info.el.dataset.dotColor = 'danger'
+                break
+              default:
+                info.el.dataset.dotColor = 'secondary'
+                break
+            }
+          }
         })
         calendar.render()
       })
