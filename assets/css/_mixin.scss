@@ -1,10 +1,10 @@
-@mixin fc() {
+@mixin dfc() {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@mixin fic() {
+@mixin difc() {
   display: inline-flex;
   justify-content: center;
   align-items: center;

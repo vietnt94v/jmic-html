@@ -8,10 +8,10 @@
   flex: 0 0 auto;
 }
 
-.fc {
-  @include fc();
+.dfc {
+  @include dfc();
 }
 
-.fic {
-  @include fic();
+.difc {
+  @include difc();
 }

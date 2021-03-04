@@ -8942,7 +8942,7 @@ img {
           flex: 0 0 auto;
 }
 
-.fc {
+.dfc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8954,7 +8954,7 @@ img {
           align-items: center;
 }
 
-.fic {
+.difc {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
