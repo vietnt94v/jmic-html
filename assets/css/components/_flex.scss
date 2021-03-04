@@ -7,3 +7,11 @@
 .flex-0-0 {
   flex: 0 0 auto;
 }
+
+.fc {
+  @include fc();
+}
+
+.fic {
+  @include fic();
+}

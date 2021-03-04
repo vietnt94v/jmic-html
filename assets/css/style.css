@@ -8814,6 +8814,7 @@ img {
 
 .btn-lg, .btn-group-lg > .btn {
   height: 50px;
+  font-size: 16px;
 }
 
 .btn-light {
@@ -8941,6 +8942,30 @@ img {
           flex: 0 0 auto;
 }
 
+.fc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fic {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .title-page {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8977,6 +9002,11 @@ img {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
+.table-lg th,
+.table-lg td {
+  padding: 18px;
+}
+
 .column-1 {
   -webkit-columns: 1;
           columns: 1;
@@ -9008,6 +9038,18 @@ img {
 
 .link-dark:hover {
   color: #6e777e;
+}
+
+a.btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .modal-content {

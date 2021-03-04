@@ -5,3 +5,7 @@
     color: #6e777e;
   }
 }
+
+a.btn {
+  @include fic();
+}

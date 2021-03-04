@@ -1,3 +1,15 @@
+@mixin fc() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin fic() {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
 // Circle
 @mixin circle-variant($background) {
   @include gradient-bg($background);

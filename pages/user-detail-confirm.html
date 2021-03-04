@@ -75,11 +75,63 @@
 
           <!-- Main Content -->
           <div class="main-content">
-            <h2 class="title-page">
-              <span class="material-icons-outlined">email</span>
+            <h2 class="title-page d-flex align-items-center mb-7">
+              <span class="material-icons-outlined fs-30">email</span>
               <span class="pl-1">以下の内容で送信予約して良いですか？</span>
             </h2>
-            
+            <div class="table-responsive mb-10">
+              <table
+                class="table table-lg table-striped table-borderless border text-nowrap"
+              >
+                <tr>
+                  <td>企業名</td>
+                  <td><span class="fs-14"></span>株式会社ABC</td>
+                </tr>
+                <tr>
+                  <td>氏名</td>
+                  <td><span class="fs-14">********</span></td>
+                </tr>
+                <tr>
+                  <td>ID</td>
+                  <td><span class="fs-14">123456</span></td>
+                </tr>
+                <tr>
+                  <td>配信日</td>
+                  <td><span class="fs-14 fwb">2021年4月1日　13：00</span></td>
+                </tr>
+                <tr>
+                  <td>タイトル</td>
+                  <td>
+                    <span class="fs-14 fwb"
+                      >トレーニングについてお知らせです</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>メッセージ本文</td>
+                  <td class="text-wrap">
+                    <span class="fs-14 fwb">【連絡事項】</span><br />
+                    トレーニングについてご連絡です。○○○○○○○○○○○○○○○○○○○○○○
+                    ○○○○○○○○○○○○○○○○○○○ ○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○
+                    ○○○○○○○○○○○○○○○○○○○○○○○○○○○○○
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="d-flex">
+              <button
+                class="flex-1 btn btn-lg btn-secondary text-light mr-4 disabled"
+                data-toggle="modal"
+                data-target="#saveDraff"
+              >
+                下書き保存
+              </button>
+              <a
+                href="/pages/user-detail-confirm-send-reservation.html"
+                class="flex-1 btn btn-lg btn-primary"
+                >送信予約</a
+              >
+            </div>
           </div>
           <!-- Main Content -->
         </div>
@@ -90,6 +142,52 @@
     <!-- Footer -->
     <footer class="footer-page"></footer>
     <!-- End Footer -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="saveDraff"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="pt-10"></div>
+            <div class="text-primary text-center fs-18 fwb mb-7">
+              メッセージは下書き保存されました！<br />
+              配信する際は配信BOXから配信手続きを再開してください。
+            </div>
+            <div class="text-center">
+              <a
+                href="/pages/index.html"
+                class="btn btn-lg btn-primary w--340 fic"
+                >HOME HOME</a
+              >
+            </div>
+            <div class="pt-10"></div>
+            <div class="pt-10"></div>
+            <div class="pt-10"></div>
+            <div class="pt-10"></div>
+            <div class="pt-10"></div>
+            <div class="pt-10"></div>
+            <div class="pt-10"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
 
     <script src="/assets/js/jquery-3.5.1.min.js"></script>
     <script src="/assets/js/bootstrap.min.js"></script>
