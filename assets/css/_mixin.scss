@@ -4,6 +4,11 @@
   align-items: center;
 }
 
+@mixin dfac() {
+  display: flex;
+  align-items: center;
+}
+
 @mixin difc() {
   display: inline-flex;
   justify-content: center;
@@ -17,4 +22,12 @@
 
 @mixin trans() {
   transition: all 0.3s ease;
+}
+
+@mixin trans-fast() {
+  transition: all 0.15s ease;
+}
+
+@mixin trans-slow() {
+  transition: all 0.45s ease;
 }

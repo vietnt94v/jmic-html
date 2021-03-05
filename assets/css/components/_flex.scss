@@ -12,6 +12,10 @@
   @include dfc();
 }
 
+.dfac {
+  @include dfac();
+}
+
 .difc {
   @include difc();
 }

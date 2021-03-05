@@ -43,6 +43,8 @@
 }
 
 .fc-toolbar-title {
+  font-family: system-ui;
+  font-weight: $fwn;
   color: $dark;
   font-size: 30px !important;
   letter-spacing: 4px;
@@ -83,14 +85,14 @@
   }
 
   .fc-daygrid-day-events {
-    min-height: 12px !important;
+    min-height: 15px !important;
   }
 
   .fc-daygrid-event {
     width: 11px;
     height: 11px;
     border-radius: 50%;
-    margin: 0 4px !important;
+    margin: 2px 4px !important;
   }
 
   .fc-col-header {
@@ -108,6 +110,11 @@
   .fc-day-today {
     background-color: transparent !important;
   }
+
+  .fc-daygrid-day-number {
+    font-family: system-ui;
+    letter-spacing: 6px;
+  }
 }
 
 .fc-daygrid-event {
@@ -115,8 +122,8 @@
     background-color: $primary;
   }
 
-  &[data-dot-color='info-more'] {
-    background-color: $info-more;
+  &[data-dot-color='info'] {
+    background-color: $info;
   }
 
   &[data-dot-color='warning'] {
